@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Sorry, Sanchita ❤️</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            padding: 60px 40px;
+            text-align: center;
+            animation: slideIn 0.8s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .heart {
+            font-size: 80px;
+            animation: heartBeat 1.2s infinite;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        @keyframes heartBeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.3);
+            }
+        }
+
+        h1 {
+            color: #333;
+            font-size: 48px;
+            margin: 20px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 30px 0;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .reason-box {
+            background: #f8f9fa;
+            border-left: 5px solid #667eea;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 10px;
+            text-align: left;
+            animation: slideInLeft 1s ease-out 0.3s both;
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .reason-box h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .reason-box p {
+            color: #666;
+            font-size: 16px;
+        }
+
+
+
+        .success-message {
+            display: none;
+            color: #28a745;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .flowers {
+            font-size: 40px;
+            margin: 20px 0;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>I'm Truly Sorry, Sanchita</h1>
+        
+        <p class="message">
+            You mean the world to me, and I deeply regret my actions. I let you down when you needed me the most, and that's something I can never forgive myself for easily.
+        </p>
+
+        <div class="reason-box">
+            <h3>Why I'm Sorry:</h3>
+            <p>I wasn't there for you when it mattered. I made mistakes, said things I shouldn't have, and failed to show you the respect and care you deserve. You've always been there for me, and I betrayed that trust. I'm truly sorry.</p>
+        </div>
+
+        <div class="reason-box">
+            <h3>What I Promise:</h3>
+            <p>I promise to be a better friend. I will listen more, judge less, and always show up for you. Your friendship is precious to me, and I will spend the time and effort needed to rebuild what I've broken.</p>
+        </div>
+
+        <p class="message">
+            You deserve someone who appreciates you fully, and I want to be that person. Please give me a chance to make things right.
+        </p>
+
+        <div class="flowers">🌹</div>
+
+        <div class="success-message" id="successMsg"></div>
+    </div>
+
+    <script>
+        // Easter egg: Click the heart for animation
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.heart').addEventListener('click', () => {
+                alert('Thank you for visiting my apology page! 💙');
+            });
+        });
+    </script>
+</body>
+</html>
